@@ -340,3 +340,20 @@ th a,
 h2, h3, h2 a, h3 a {
     color: #ffffff !important;
 }
+/* ==========================================================================
+   📱 MOBILE NAVIGATION FIX
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+    
+    .navbar, .navbar-fixed-top, #nav, .nav-container, header {
+        z-index: 99999 !important;
+        position: relative !important;
+    }
+
+    .dropdown-menu, .navbar-collapse, .collapse.in {
+        z-index: 100000 !important;
+        position: relative !important;
+        pointer-events: auto !important;
+    }
+}
+
