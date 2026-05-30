@@ -344,56 +344,41 @@ h2, h3, h2 a, h3 a {
    📱 HOPEFULLY MOBILE FIX
    ========================================================================== */
 @media screen and (max-width: 767px) {
+    
 
-    .navbar-collapse, 
-    .collapse.in, 
-    #navbar-mobile-target,
-    div.nav-container {
-        background-color: var(--panel-bg) !important;
-        display: block !important;
-        width: 100% !important;
-        text-align: left !important;
+    .navbar-collapse.collapse.in {
+        background-color: var(--panel-bg) !important; 
+        text-align: left !important; 
         padding: 10px 15px !important;
         border-bottom: 2px solid var(--border-color) !important;
     }
 
-    .navbar-nav, 
-    ul.nav, 
-    .navbar-collapse ul {
-        display: block !important;
-        float: none !important;
+    .navbar-collapse.collapse.in ul.nav,
+    .navbar-collapse.collapse.in .navbar-nav {
         margin: 0 !important;
         padding: 0 !important;
         text-align: left !important;
-        width: 100% !important;
     }
 
-    .navbar-nav li, 
-    ul.nav li,
-    .navbar-collapse li {
+    .navbar-collapse.collapse.in li {
         display: block !important;
         width: 100% !important;
-        float: none !important;
-        text-align: left !important; 
+        text-align: left !important;
         background-color: var(--panel-bg) !important;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important; 
     }
 
-    .navbar-nav li a, 
-    ul.nav li a,
-    .navbar-collapse li a {
+    .navbar-collapse.collapse.in li a {
         display: block !important;
         width: 100% !important;
         text-align: left !important;
         padding: 12px 10px !important;
         color: var(--link-color) !important;
-        background: transparent !important;
     }
 
-    .navbar-nav li a:hover, 
-    .navbar-nav li a:active,
-    ul.nav li a:focus {
-        background-color: var(--table-bg) !important; 
+    .navbar-collapse.collapse.in li a:hover,
+    .navbar-collapse.collapse.in li a:active {
+        background-color: var(--table-bg) !important;
         color: var(--link-hover) !important;
         text-decoration: none !important;
     }
