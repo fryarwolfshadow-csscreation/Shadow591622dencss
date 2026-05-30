@@ -341,45 +341,60 @@ h2, h3, h2 a, h3 a {
     color: #ffffff !important;
 }
 /* ==========================================================================
-   📱 MOBILE DROP-DOWN MENU FIX (Den, Crossroads, Hoard)
+   📱 HOPEFULLY MOBILE FIX
    ========================================================================== */
 @media screen and (max-width: 767px) {
 
-    .navbar-nav .dropdown-menu, 
-    .dropdown-menu, 
-    #nav .dropdown-menu {
-        background-color: var(--panel-bg) !important; 
-        border: 2px solid var(--border-color) !important; 
-        display: block; 
+    .navbar-collapse, 
+    .collapse.in, 
+    #navbar-mobile-target,
+    div.nav-container {
+        background-color: var(--panel-bg) !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: left !important;
+        padding: 10px 15px !important;
+        border-bottom: 2px solid var(--border-color) !important;
+    }
+
+    .navbar-nav, 
+    ul.nav, 
+    .navbar-collapse ul {
+        display: block !important;
         float: none !important;
-        width: 100% !important; 
-        min-width: 200px !important;
-        padding: 5px 0 !important;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) !important; 
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: left !important;
+        width: 100% !important;
     }
 
-    
-    .dropdown-menu li, 
-    .navbar-nav .dropdown-menu li {
-        text-align: left !important; 
-        width: 100% !important;
+    .navbar-nav li, 
+    ul.nav li,
+    .navbar-collapse li {
         display: block !important;
+        width: 100% !important;
+        float: none !important;
+        text-align: left !important; 
+        background-color: var(--panel-bg) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
     }
 
-    .dropdown-menu li a, 
-    .navbar-nav .dropdown-menu li a {
-        color: var(--link-color) !important; 
+    .navbar-nav li a, 
+    ul.nav li a,
+    .navbar-collapse li a {
         display: block !important;
-        text-align: left !important; 
-        padding: 10px 15px !important; 
         width: 100% !important;
+        text-align: left !important;
+        padding: 12px 10px !important;
+        color: var(--link-color) !important;
         background: transparent !important;
     }
 
-    .dropdown-menu li a:hover, 
-    .dropdown-menu li a:active {
-        background-color: var(--table-bg) !important;
+    .navbar-nav li a:hover, 
+    .navbar-nav li a:active,
+    ul.nav li a:focus {
+        background-color: var(--table-bg) !important; 
         color: var(--link-hover) !important;
+        text-decoration: none !important;
     }
 }
-
