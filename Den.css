@@ -340,13 +340,6 @@ th a,
 h2, h3, h2 a, h3 a {
     color: #ffffff !important;
 }
-/* ==========================================================
-   🖼️ CUSTOM CAVE IMAGE MANAGER (REPLACES THE IMAGE ONLY)
-========================================================== */
-
-/* --- 1. INDIVIDUAL UNIQUE PRIDE CAVES --- 
-   👉 To find your cave's ID numbers: Click your cave from your den page 
-      and look at the address bar. Put those numbers in place of the 11111/22222. */
 
 /* Arborcraft Den */
 a[href$="538856"] > div.cave-grid > img {
