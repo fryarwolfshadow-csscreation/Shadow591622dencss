@@ -340,6 +340,87 @@ th a,
 h2, h3, h2 a, h3 a {
     color: #ffffff !important;
 }
+/* ==========================================================
+   🖼️ CUSTOM CAVE IMAGE MANAGER (REPLACES THE IMAGE ONLY)
+========================================================== */
+
+/* --- 1. INDIVIDUAL UNIQUE PRIDE CAVES --- 
+   👉 To find your cave's ID numbers: Click your cave from your den page 
+      and look at the address bar. Put those numbers in place of the 11111/22222. */
+
+/* Arborcraft Den */
+a[href$="538856"] > div.cave-grid > img {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/superbloodmoon.png") !important;
+    background-size: cover !important;               
+    background-position: center !important;
+    width: 240px !important;
+    height: 120px !important;
+}
+
+/* Msitu Pride Den */
+a[href$="537522"] > div.cave-grid > img {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/walkbeach.png") !important;
+    background-size: cover !important;               
+    background-position: center !important;
+    width: 240px !important;
+    height: 120px !important;
+}
+
+/* Auction Den */
+a[href$="537477"] > div.cave-grid > img {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/desertcave.png") !important;
+    background-size: cover !important;               
+    background-position: center !important;
+    width: 240px !important;
+    height: 120px !important;
+}
+
+
+/* RimwoodGrove Den */
+a[href$="541521"] > div.cave-grid > img {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/zaxkingfishergrove.png") !important;
+    background-size: cover !important;               
+    background-position: center !important;
+    width: 240px !important;
+    height: 120px !important;
+}
+
+/* Wanderer's Cove Den */
+a[href$="539906"] > div.cave-grid > img {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/febcave.png") !important;
+    background-size: cover !important;               
+    background-position: center !important;
+    width: 240px !important;
+    height: 120px !important;
+}
+
+/* "UNSORTED LIONS" */
+a[href*="unsorted.php"] > div.cave-grid > img {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/SecludedWaterfallBG.png") !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    width: 260px !important;
+    height: 60px !important;
+}
+
+/* "PRIDE OVERVIEW" */
+a[href*="lionoverview.php"] > div.cave-grid > img {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/SecludedWaterfallBG.png") !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    width: 260px !important;
+    height: 60px !important;
+}
+
+/* "PREGNANT LIONESSES" */
+a[href*="nesting.php"] > div.cave-grid > img {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/SecludedWaterfallBG.png") !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    width: 260px !important;
+    height: 60px !important;
+}
+
 /* ==========================================================================
    📱 HOPEFULLY MOBILE FIX
    ========================================================================== */
