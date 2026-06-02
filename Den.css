@@ -417,6 +417,16 @@ a[href*="nesting.php"] > div.cave-grid > img {
     height: 60px !important;
 }
 
+/* CSS Credit Line (Change color if needed) */
+.breadcrumb::before {
+    content: "CSS by Shadow #591622" !important;
+    color: #6c26ff !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    position: absolute !important;
+    right: 135px !important;
+}
+
 /* ==========================================================================
    📱 HOPEFULLY MOBILE FIX
    ========================================================================== */
