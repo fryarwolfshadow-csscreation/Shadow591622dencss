@@ -487,16 +487,21 @@ a[href*="nesting.php"] > div.cave-grid > img {
     
     .navbar, .navbar-fixed-top, #nav, .nav-container, header {
         position: relative !important;
+        display: block !important;
+        height: auto !important;
         z-index: 99999 !important;
     }
 
     .navbar-collapse.collapse.in {
         position: relative !important;
+        display: block !important;
+        clear: both !important;
+        height: auto !important;
         z-index: 100000 !important;
-        background-color: var(--panel-bg) !important;
+        
+        background-color: #0b1a16 !important; 
         border-bottom: 2px solid var(--border-color) !important;
         text-align: left !important;
-        
         padding: 0 !important; 
     }
 
@@ -504,12 +509,13 @@ a[href*="nesting.php"] > div.cave-grid > img {
     .navbar-collapse.collapse.in .navbar-nav {
         margin: 0 !important;
         padding: 0 !important;
+        display: block !important;
     }
 
     .navbar-collapse.collapse.in li {
         display: block !important;
         width: 100% !important;
-        background-color: var(--panel-bg) !important;
+        background-color: #0b1a16 !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
     }
 
@@ -519,10 +525,9 @@ a[href*="nesting.php"] > div.cave-grid > img {
         display: block !important;
         width: 100% !important;
         text-align: left !important;
-        
-        padding: 14px 20px !important;
-        font-size: 16px !important;
-        text-transform: uppercase !important;
+        padding: 14px 20px !important;       
+        font-size: 16px !important;          
+        text-transform: uppercase !important; 
         color: var(--link-color) !important;
     }
 
