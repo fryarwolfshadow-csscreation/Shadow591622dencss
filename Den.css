@@ -426,55 +426,101 @@ a[href*="nesting.php"] > div.cave-grid > img {
     position: absolute !important;
     right: 135px !important;
 }
+/* ==========================================
+   🌿 GENERAL NOTIFICATIONS (Green / Success / Info)
+   👉 For Hunting, Patrolling, and Explorer updates
+   ========================================== */
+.alert, .alert-success, .alert-info {
+    background: #739665 !important;
+    border: 1px solid #HEX !important;
+    border-radius: 6px !important;
+    padding: 12px 20px !important;
+    color: #HEX !important;
+}
+.alert a, .alert-success a, .alert-info a {
+    color: #aa2a9c !important;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}
+.alert a:hover, .alert-success a:hover, .alert-info a:hover {
+    color: #c709ff !important;
+}
+
+/* ==========================================
+   🚨 Notification Updates
+   ========================================== */
+.alert, .alert-success, .alert-info {
+    background: #739665 !important;
+    border: 1px solid #HEX !important;
+    border-radius: 6px !important;
+    padding: 12px 20px !important;
+    color: #HEX !important;
+}
+.alert a, .alert-success a, .alert-info a {
+    color: #aa2a9c !important;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}
+.alert a:hover, .alert-success a:hover, .alert-info a:hover {
+    color: #c709ff !important;
+}
+
+.alert-danger, .alert-warning {
+    background: #701515 !important;
+    border: 1px solid #950000 !important;
+    border-radius: 6px !important;
+    padding: 12px 20px !important;
+    color: #ff1f1f !important;
+}
+.alert-danger a, .alert-warning a {
+    color: #aa2a9c !important; 
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}
+.alert-danger a:hover, .alert-warning a:hover {
+    color: #c709ff !important;
+}
 
 /* ==========================================================================
    📱 HOPEFULLY MOBILE FIX
    ========================================================================== */
 @media screen and (max-width: 767px) {
     
-
     .navbar, .navbar-fixed-top, #nav, .nav-container, header {
-        z-index: 99999 !important;
         position: relative !important;
-        pointer-events: auto !important;
+        z-index: 99999 !important;
     }
 
     .navbar-collapse.collapse.in {
-        background-color: var(--panel-bg) !important;
-        text-align: left !important;
-        padding: 10px 15px !important;
-        border-bottom: 2px solid var(--border-color) !important;
-        z-index: 100000 !important;
         position: relative !important;
-        pointer-events: auto !important;
+        z-index: 100000 !important;
+        background-color: var(--panel-bg) !important;
+        border-bottom: 2px solid var(--border-color) !important;
+        padding: 10px 15px !important;
+        text-align: left !important;
     }
 
     .navbar-collapse.collapse.in ul.nav,
     .navbar-collapse.collapse.in .navbar-nav {
         margin: 0 !important;
         padding: 0 !important;
-        text-align: left !important;
-        pointer-events: auto !important;
     }
 
     .navbar-collapse.collapse.in li {
         display: block !important;
         width: 100% !important;
-        text-align: left !important;
         background-color: var(--panel-bg) !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
-        pointer-events: auto !important;
     }
 
     .navbar-collapse.collapse.in li a {
+        position: relative !important;
+        z-index: 100001 !important;
         display: block !important;
         width: 100% !important;
-        text-align: left !important;
         padding: 12px 10px !important;
         color: var(--link-color) !important;
-        z-index: 100001 !important;
-        position: relative !important;
-        pointer-events: auto !important; 
+        text-align: left !important;
     }
 
     .navbar-collapse.collapse.in li a:hover,
