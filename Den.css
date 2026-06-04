@@ -484,71 +484,60 @@ a[href*="nesting.php"] > div.cave-grid > img {
         Hopefully Mobile Fix?
 ========================================== */
 @media screen and (max-width: 767px) {
-    
-    .nav-mobile, 
-    #nav-mobile, 
-    .mobile-nav, 
-    div[class*="mobile-nav"] {
+    .nav-mobile, #nav-mobile, .mobile-nav, div[class*="mobile-nav"] {
         display: none !important;
-        opacity: 0 !important;
-        visibility: hidden !important;
         height: 0 !important;
-        padding: 0 !important;
-        margin: 0 !important;
+        opacity: 0 !important;
         overflow: hidden !important;
+        pointer-events: none !important;
     }
+}
+@media screen and (max-width: 767px) {
     
-    .navbar, .navbar-fixed-top, #nav, .nav-container, header {
-        position: relative !important;
-        display: block !important;
-        height: auto !important;
-        top: auto !important;
-        left: auto !important;
-        z-index: 99999 !important;
-    }
 
+    .navbar, .navbar-fixed-top, #nav, .nav-container, header {
+        z-index: 99999 !important;
+        position: relative !important;
+        pointer-events: auto !important;
+    }
 
     .navbar-collapse.collapse.in {
-        position: relative !important;
-        display: block !important;  
-        clear: both !important;
-        height: auto !important;    
-        z-index: 100000 !important;
-        background-color: #0b1a16 !important; 
-        border-bottom: 2px solid var(--border-color) !important;
+        background-color: var(--panel-bg) !important;
         text-align: left !important;
-        padding: 0 !important; 
+        padding: 10px 15px !important;
+        border-bottom: 2px solid var(--border-color) !important;
+        z-index: 100000 !important;
+        position: relative !important;
+        pointer-events: auto !important;
     }
-
 
     .navbar-collapse.collapse.in ul.nav,
     .navbar-collapse.collapse.in .navbar-nav {
         margin: 0 !important;
         padding: 0 !important;
-        display: block !important;
+        text-align: left !important;
+        pointer-events: auto !important;
     }
-
 
     .navbar-collapse.collapse.in li {
         display: block !important;
         width: 100% !important;
-        background-color: #0b1a16 !important; 
+        text-align: left !important;
+        background-color: var(--panel-bg) !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+        pointer-events: auto !important;
     }
 
-
     .navbar-collapse.collapse.in li a {
-        position: relative !important;
-        z-index: 100001 !important;
         display: block !important;
         width: 100% !important;
         text-align: left !important;
-        padding: 14px 20px !important;       
-        font-size: 16px !important;          
-        text-transform: uppercase !important; 
+        padding: 12px 10px !important;
         color: var(--link-color) !important;
+        z-index: 100001 !important;
+        position: relative !important;
+        pointer-events: auto !important; 
     }
-
 
     .navbar-collapse.collapse.in li a:hover,
     .navbar-collapse.collapse.in li a:active {
