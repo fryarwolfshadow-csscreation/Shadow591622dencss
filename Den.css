@@ -481,11 +481,10 @@ a[href*="nesting.php"] > div.cave-grid > img {
     color: #c709ff !important;
 }
 /* ==========================================
-        Hopefully Mobile Fix?
+        Hopefully Mobile Fix? (Temporary, It works for now until I learn more)
 ========================================== */
 @media screen and (max-width: 767px) {
     
-
     .navbar, .navbar-fixed-top, #nav, .nav-container, header {
         z-index: 99999 !important;
         position: relative !important;
@@ -493,7 +492,7 @@ a[href*="nesting.php"] > div.cave-grid > img {
     }
 
     .navbar-collapse.collapse.in {
-        background-color: var(--panel-bg) !important;
+        background-color: #960505 !important;
         text-align: left !important;
         padding: 10px 15px !important;
         border-bottom: 2px solid var(--border-color) !important;
@@ -532,7 +531,7 @@ a[href*="nesting.php"] > div.cave-grid > img {
 
     .navbar-collapse.collapse.in li a:hover,
     .navbar-collapse.collapse.in li a:active {
-        background-color: var(--table-bg) !important;
+        background-color: #960505 !important;
         color: var(--link-hover) !important;
         text-decoration: none !important;
     }
