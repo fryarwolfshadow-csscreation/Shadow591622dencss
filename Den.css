@@ -485,23 +485,34 @@ a[href*="nesting.php"] > div.cave-grid > img {
    📱 HOPEFULLY MOBILE FIX
    ========================================================================== */
 @media screen and (max-width: 767px) {
-    
     .navbar, .navbar-fixed-top, #nav, .nav-container, header {
         position: relative !important;
-        z-index: 99999 !important;
+        top: auto !important;
+        left: auto !important;
+        height: auto !important;
+        display: block !important;
+        float: none !important;
+        z-index: 9999 !important;
     }
 
     .navbar-collapse.collapse.in {
         position: relative !important;
-        z-index: 100000 !important;
+        display: block !important;
+        height: auto !important;
+        clear: both !important;
+        visibility: visible !important;
+        overflow: visible !important;
+        
         background-color: var(--panel-bg) !important;
         border-bottom: 2px solid var(--border-color) !important;
         padding: 10px 15px !important;
-        text-align: left !important;
     }
 
     .navbar-collapse.collapse.in ul.nav,
     .navbar-collapse.collapse.in .navbar-nav {
+        display: block !important;
+        float: none !important;
+        position: relative !important;
         margin: 0 !important;
         padding: 0 !important;
     }
@@ -509,24 +520,18 @@ a[href*="nesting.php"] > div.cave-grid > img {
     .navbar-collapse.collapse.in li {
         display: block !important;
         width: 100% !important;
+        position: relative !important;
+        float: none !important;
         background-color: var(--panel-bg) !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
     }
 
     .navbar-collapse.collapse.in li a {
-        position: relative !important;
-        z-index: 100001 !important;
         display: block !important;
         width: 100% !important;
+        position: relative !important;
         padding: 12px 10px !important;
         color: var(--link-color) !important;
         text-align: left !important;
-    }
-
-    .navbar-collapse.collapse.in li a:hover,
-    .navbar-collapse.collapse.in li a:active {
-        background-color: var(--table-bg) !important;
-        color: var(--link-hover) !important;
-        text-decoration: none !important;
     }
 }
