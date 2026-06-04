@@ -480,39 +480,35 @@ a[href*="nesting.php"] > div.cave-grid > img {
 .alert-danger a:hover, .alert-warning a:hover {
     color: #c709ff !important;
 }
-
-/* ==========================================================================
-   📱 HOPEFULLY MOBILE FIX
-   ========================================================================== */
+/* ==========================================
+        Hopefully Mobile Fix?
+========================================== */
 @media screen and (max-width: 767px) {
-    .navbar, .navbar-fixed-top, #nav, .nav-container, header {
-        position: relative !important;
-        top: auto !important;
-        left: auto !important;
-        height: auto !important;
-        display: block !important;
+
+    .navbar-header {
         float: none !important;
-        z-index: 9999 !important;
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 10px 15px !important;
     }
 
     .navbar-collapse.collapse.in {
         position: relative !important;
         display: block !important;
+        width: 100% !important;
         height: auto !important;
-        clear: both !important;
-        visibility: visible !important;
-        overflow: visible !important;
-        
+        margin: 0 !important;
+        padding: 0 !important;
         background-color: var(--panel-bg) !important;
-        border-bottom: 2px solid var(--border-color) !important;
-        padding: 10px 15px !important;
+        border: none !important;
+        box-shadow: none !important;
     }
 
     .navbar-collapse.collapse.in ul.nav,
     .navbar-collapse.collapse.in .navbar-nav {
         display: block !important;
-        float: none !important;
-        position: relative !important;
+        width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
     }
@@ -520,18 +516,25 @@ a[href*="nesting.php"] > div.cave-grid > img {
     .navbar-collapse.collapse.in li {
         display: block !important;
         width: 100% !important;
-        position: relative !important;
-        float: none !important;
         background-color: var(--panel-bg) !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+        border: none !important;
+        margin: 0 !important;
     }
 
     .navbar-collapse.collapse.in li a {
         display: block !important;
         width: 100% !important;
-        position: relative !important;
-        padding: 12px 10px !important;
+        padding: 14px 20px !important;
         color: var(--link-color) !important;
         text-align: left !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        text-transform: uppercase !important;
+    }
+
+    .navbar-collapse.collapse.in li a:hover {
+        background-color: var(--table-bg) !important;
+        color: var(--link-hover) !important;
+        text-decoration: none !important;
     }
 }
